@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font: 16px 'Catamaran', sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 46px;
+    line-height: 60px;
+    letter-spacing: .5px;
+}
+.btn {
+    color: #fff;
+    background: #D22238;
+    width: 143px;
+    height: 62px;
+    border-radius: 9px;
+    border: none;
+}

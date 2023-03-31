@@ -1,0 +1,21 @@
+.menu {
+ position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: #fff;
+  list-style-type: none;
+  padding: 20px;
+  transition: .3s;
+  width: 100%;
+  
+}
+.notMenu {
+  position: absolute;
+  top: 70px;
+  left: -100%;
+  background-color: #fff;
+  list-style-type: none;
+  padding: 20px;
+  transition: .3s;
+  width: 100%;
+}

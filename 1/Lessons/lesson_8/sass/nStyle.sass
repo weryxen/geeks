@@ -1,0 +1,162 @@
+    @import "vars"
+
+%temp
+    color: red
+    font-size: $fz20 + px
+    line-height: 30px
+
+.temp
+    color: $mainColor
+    font-size: 20px
+    line-height: 30px
+
+@mixin temp($c, $fz, $lh)
+    color: $c
+    font-size: $fz
+    line-height: $lh
+
+@mixin link
+    a
+        color: black
+        span
+            font-size: 12px
+
+.main
+    position: relative
+    display: flex
+    height: 100vh
+    align-items: center
+    text-align: center
+    background: url('../images/main/image-main-2.jpg') no-repeat top center
+    background-size: cover
+    //@extend %temp
+    //@extend .temp
+    //@include temp(red, 20px, 30px)
+    //@include link
+    @media (max-width: 767px)
+        height: auto
+        padding-top: 90px
+        padding-bottom: 20px
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: rgba(0, 0, 0, 0.54)
+        //@include temp(blue, 30px, 40px)
+    .container
+        position: relative
+        z-index: 1
+    h1
+        font-size: 56px
+        line-height: 73px
+        color: #ffffff
+        @media (max-width: 767px)
+            font-size: 28px
+            line-height: 32px
+        //@include link
+    p
+        width: 870px
+        margin: 24px auto 49px
+        font-size: 16px
+        line-height: 25px
+        color: #ffffff
+        @media (max-width: 900px)
+            width: 100%
+
+.info
+    position: relative
+    margin-top: -96px
+    margin-bottom: 128px
+    z-index: 1
+    @media (max-width: 767px)
+        margin-top: 20px
+        margin-bottom: 40px
+    //@extend %temp
+    &__inner
+        background: #ffffff
+        display: flex
+        justify-content: space-between
+        padding: 56px 88px
+        box-shadow: 0 11px 35px rgba(0, 0, 0, 0.08)
+        border-radius: 4px
+        @media (max-width: 950px)
+            flex-wrap: wrap
+            justify-content: center
+    &__item
+        display: flex
+        @media (max-width: 950px)
+            margin: 20px 40px
+        img
+            width: 72px
+            margin-right: 24px
+            @media (max-width: 500px)
+                width: 50px
+        p
+            margin-bottom: 8px
+            font-size: 36px
+            line-height: 47px
+            font-weight: 700
+            @media (max-width: 500px)
+                font-size: 22px
+                line-height: 30px
+        span
+            font-size: 16px
+            line-height: 25px
+            color: $mainColor
+            @media (max-width: 500px)
+                font-size: 12px
+                line-height: 16px
+
+
+//.course {
+//    margin-bottom: 128px;
+//}
+//.course__inner {
+//    display: flex;
+//    justify-content: space-between;
+//    align-items: center;
+//}
+//.course__inner .page-title {
+//    text-align: left;
+//}
+//.course__inner .page-title h2 {
+//    margin-bottom: 24px;
+//}
+//.course__inner .left {
+//    flex: 0 1 520px;
+//}
+//.course__inner .left span {
+//    display: block;
+//    margin-top: 16px;
+//    margin-bottom: 32px;
+//    font-size: 20px;
+//    line-height: 28px;
+//}
+//.course__inner .right {
+//    flex: 0 0 595px;
+//}
+//.course__inner .image {
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//    width: 100%;
+//    height: 433px;
+//    background: url('../images/course/image-course.jpg') no-repeat center;
+//    background-size: cover;
+//    border-radius: 4px;
+//}
+//.course__inner .image a {
+//    display: block;
+//    width: 80px;
+//    height: 80px;
+//    border-radius: 50%;
+//    background: white url('../images/course/icon-play.svg') no-repeat center;
+//    background-size: 24px;
+//}
+//.course__inner:hover a {
+//    background-color: #517dc0;
+//}

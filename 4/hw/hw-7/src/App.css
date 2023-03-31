@@ -1,0 +1,11 @@
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-right: 15px;
+}
+
+.active {
+  color:red;
+}

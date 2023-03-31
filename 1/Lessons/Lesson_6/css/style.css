@@ -1,0 +1,72 @@
+/****************/
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #F0FBFF;
+}
+.home h1 {
+    margin-bottom: 37px;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 1px;
+}
+.home p {
+    width: 488px;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+.home__innerText {
+    width: 550px;
+}
+/****************/
+.clients {
+    padding: 235px 0 125px;
+    text-align: center;
+}
+.clients__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+/****************/
+.solutions {
+    padding: 125px 0 118px;
+}
+/*.solutions h2:hover {*/
+/*    color: red;*/
+/*}*/
+.solutions__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.solutions__inner .left {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 562px;
+}
+.solutions__image {
+    width: 270px;
+    height: 495px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+}
+.solutions__inner .right {
+    flex: 0 1 538px;
+}
+
+/****************/
+form {
+    width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+form input {
+    padding: 10px 15px; 
+    border-radius: 10px;
+}
